@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ApplicationClass.h" />
-    <ClInclude Include="InputClass.h" />
-    <ClInclude Include="SystemClass.h" />
+    <ClCompile Include="..\Core\ApplicationClass.cpp" />
+    <ClCompile Include="..\Core\InputClass.cpp" />
+    <ClCompile Include="..\Core\main.cpp" />
+    <ClCompile Include="..\Core\SystemClass.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ApplicationClass.cpp" />
-    <ClCompile Include="InputClass.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="SystemClass.cpp" />
+    <ClInclude Include="..\Core\ApplicationClass.h" />
+    <ClInclude Include="..\Core\InputClass.h" />
+    <ClInclude Include="..\Core\SystemClass.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
