@@ -1,9 +1,9 @@
 # HSRenderer
 
-·»´õ¸µ ÇÁ·¹ÀÓ¿öÅ© ÇĞ½À ¿ëµµÀÇ ÇÁ·ÎÁ§Æ®ÀÔ´Ï´Ù.
+ë Œë”ë§ í”„ë ˆì„ì›Œí¬ í•™ìŠµ ìš©ë„ì˜ í”„ë¡œì íŠ¸ì…ë‹ˆë‹¤.
 
-´ÙÀ½ ÀÚ·á¸¦ ÅëÇØ ÁøÇà ÁßÀÔ´Ï´Ù.
+ë‹¤ìŒ ìë£Œë¥¼ í†µí•´ ì§„í–‰ ì¤‘ì…ë‹ˆë‹¤.
 
-Ã¥ <Introduction to 3D Game Programming with DirectX 11>
-Ã¥ <Real-Time Rendering>
-À¥»çÀÌÆ® <https://www.rastertek.com/index.html>
+ì±… "Introduction to 3D Game Programming with DirectX 11"
+ì±… "Real-Time Rendering"
+ì›¹ì‚¬ì´íŠ¸ "https://www.rastertek.com/index.html"
