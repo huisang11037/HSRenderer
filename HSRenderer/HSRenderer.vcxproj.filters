@@ -1,14 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\Core\ApplicationClass.cpp" />
-    <ClCompile Include="..\Core\InputClass.cpp" />
-    <ClCompile Include="..\Core\main.cpp" />
-    <ClCompile Include="..\Core\SystemClass.cpp" />
+    <ClCompile Include="D3DClass.cpp">
+      <Filter>System\Application\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ApplicationClass.cpp">
+      <Filter>System\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="InputClass.cpp">
+      <Filter>System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemClass.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Core\ApplicationClass.h" />
-    <ClInclude Include="..\Core\InputClass.h" />
-    <ClInclude Include="..\Core\SystemClass.h" />
+    <ClInclude Include="D3DClass.h">
+      <Filter>System\Application\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationClass.h">
+      <Filter>System\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="InputClass.h">
+      <Filter>System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemClass.h">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="System">
+      <UniqueIdentifier>{b7174d46-f667-4d48-9644-bea4e393faa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Application">
+      <UniqueIdentifier>{59729dbb-e8eb-40b7-a4be-76de627fd162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Input">
+      <UniqueIdentifier>{5cbda381-478c-429d-9b1b-dce1f543056f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Application\D3D">
+      <UniqueIdentifier>{a3dc19d0-c620-4120-9d94-ce462fe5f63a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
