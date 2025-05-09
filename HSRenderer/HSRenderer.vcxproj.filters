@@ -14,6 +14,15 @@
     <ClCompile Include="SystemClass.cpp">
       <Filter>System</Filter>
     </ClCompile>
+    <ClCompile Include="ColorShaderClass.cpp">
+      <Filter>System\Application\ColorShader</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelClass.cpp">
+      <Filter>System\Application\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraClass.cpp">
+      <Filter>System\Application\Camera</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DClass.h">
@@ -27,6 +36,15 @@
     </ClInclude>
     <ClInclude Include="SystemClass.h">
       <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorShaderClass.h">
+      <Filter>System\Application\ColorShader</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelClass.h">
+      <Filter>System\Application\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraClass.h">
+      <Filter>System\Application\Camera</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -42,5 +60,25 @@
     <Filter Include="System\Application\D3D">
       <UniqueIdentifier>{a3dc19d0-c620-4120-9d94-ce462fe5f63a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{e0e49540-e0b1-4bc0-a10b-462d9b87c775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Application\ColorShader">
+      <UniqueIdentifier>{c2c642a9-da41-4e44-95ec-243449457522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Application\Model">
+      <UniqueIdentifier>{e8627a41-9e0c-43a3-be12-64fbe0506dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Application\Camera">
+      <UniqueIdentifier>{dfa91341-5eb2-47b1-8156-232bbad11489}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Color.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Color.vs">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
