@@ -22,7 +22,7 @@ public:
 
 	bool Initialize(ID3D11Device*, ID3D11DeviceContext*, char*);
 	void Shutdown();
-	void render(ID3D11DeviceContext*);
+	void Render(ID3D11DeviceContext*);
 
 	int GetIndexCount() const { return m_indexCount; }
 	ID3D11ShaderResourceView* GetTexture() const { return m_Texture->GetTexture(); }

@@ -16,8 +16,8 @@ public:
 	DirectX::XMFLOAT3 GetPosition() const { return DirectX::XMFLOAT3(m_positionX, m_positionY, m_positionZ); }
 	DirectX::XMFLOAT3 GetRotation() const { return DirectX::XMFLOAT3(m_rotationX, m_rotationY, m_rotationZ); }
 
-	void render();
-	void GetViewMatrix(DirectX::XMMATRIX&) const;
+	void Render();
+	void GetViewMatrix(DirectX::XMMATRIX&);
 
 private:
 	float m_positionX, m_positionY, m_positionZ;

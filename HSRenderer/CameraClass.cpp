@@ -29,7 +29,7 @@ void CameraClass::SetRotation(float x, float y, float z)
 	m_rotationZ = z;
 	return;
 }
-void CameraClass::render()
+void CameraClass::Render()
 {
 	DirectX::XMFLOAT3 up, position, lookAt;
 	DirectX::XMVECTOR upVector, positionVector, lookAtVector;
@@ -80,7 +80,7 @@ void CameraClass::render()
 
 	return;
 }
-void CameraClass::GetViewMatrix(DirectX::XMMATRIX& viewMatrix) const
+void CameraClass::GetViewMatrix(DirectX::XMMATRIX& viewMatrix)
 {
 	viewMatrix = m_viewMatrix;
 	return;
