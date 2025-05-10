@@ -22,7 +22,7 @@ bool TextureClass::Initialize(ID3D11Device* device, ID3D11DeviceContext* deviceC
 	D3D11_SHADER_RESOURCE_VIEW_DESC srvDesc;
 
 	// Load the targa image data into memory.
-	result = LoadTarga32Bit(filename);
+	result = loadTarga24bitAnd32bit(filename);
 	if (!result)
 	{
 		return false;
@@ -101,7 +101,7 @@ void TextureClass::Shutdown()
 
 	return;
 }
-bool TextureClass::LoadTarga32Bit(char* filename)
+bool TextureClass::loadTarga24bitAnd32bit(char* filename)
 {
 	int error, bpp, imageSize, index, i, j, k;
 	FILE* filePtr;
@@ -128,14 +128,14 @@ bool TextureClass::LoadTarga32Bit(char* filename)
 	m_width = (int)targaFileHeader.width;
 	bpp = (int)targaFileHeader.bpp;
 
-	// Check that it is 32 bit and not 24 bit.
-	if (bpp != 32)
+	// Check that it is 32 bit or 24 bit.
+	if (bpp != 32 && bpp != 24)
 	{
 		return false;
 	}
 
-	// Calculate the size of the 32 bit image data.
-	imageSize = m_width * m_height * 4;
+	// Calculate the size of image data.
+	imageSize = m_width * m_height * (bpp / 8);
 
 	// Allocate memory for the targa image data.
 	targaImage = new unsigned char[imageSize];
@@ -171,7 +171,15 @@ bool TextureClass::LoadTarga32Bit(char* filename)
 			m_targaData[index + 0] = targaImage[k + 2];  // Red.
 			m_targaData[index + 1] = targaImage[k + 1];  // Green.
 			m_targaData[index + 2] = targaImage[k + 0];  // Blue
-			m_targaData[index + 3] = targaImage[k + 3];  // Alpha
+
+			if (bpp == 32)
+			{
+				m_targaData[index + 3] = targaImage[k + 3];  // Alpha.
+			}
+			else
+			{
+				m_targaData[index + 3] = 255;  // No alpha for 24 bit.
+			}
 
 			// Increment the indexes into the targa data.
 			k += 4;

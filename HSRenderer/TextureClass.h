@@ -30,7 +30,7 @@ public:
 	int GetHeight() const { return m_height; }
 
 private:
-    bool LoadTarga32Bit(char*);
+    bool loadTarga24bitAnd32bit(char*);
 
 private:
     unsigned char* m_targaData;
