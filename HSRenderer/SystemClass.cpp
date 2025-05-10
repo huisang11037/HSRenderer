@@ -19,7 +19,7 @@ bool SystemClass::Initialize()
 	screenWidth = 0;
 	screenHeight = 0;
 
-	InitializeWindows(screenWidth, screenHeight);
+	initializeWindows(screenWidth, screenHeight);
 
 	mInput = new InputClass;
 
@@ -50,7 +50,7 @@ void SystemClass::Shutdown()
 		mInput = 0;
 	}
 
-	ShutdownWindows();
+	shutdownWindows();
 
 	return;
 }
@@ -76,7 +76,7 @@ void SystemClass::Run()
 		}
 		else
 		{
-			result = Frame();
+			result = frame();
 			if (!result)
 			{
 				done = true;
@@ -85,7 +85,7 @@ void SystemClass::Run()
 	}
 	return;
 }
-bool SystemClass::Frame()
+bool SystemClass::frame()
 {
 	bool result;
 
@@ -94,7 +94,7 @@ bool SystemClass::Frame()
 		return false;
 	}
 
-	result = mApplication->Frame();
+	result = mApplication->frame();
 	if (!result)
 	{
 		return false;
@@ -123,7 +123,7 @@ LRESULT CALLBACK SystemClass::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam
 	}
 	}
 }
-void SystemClass::InitializeWindows(int& screenWidth, int& screenHeight)
+void SystemClass::initializeWindows(int& screenWidth, int& screenHeight)
 {
 	WNDCLASSEX wc;
 	DEVMODE dmScreenSettings;
@@ -187,7 +187,7 @@ void SystemClass::InitializeWindows(int& screenWidth, int& screenHeight)
 
 	return;
 }
-void SystemClass::ShutdownWindows()
+void SystemClass::shutdownWindows()
 {
 	ShowCursor(true);
 

@@ -23,6 +23,12 @@
     <ClCompile Include="CameraClass.cpp">
       <Filter>System\Application\Camera</Filter>
     </ClCompile>
+    <ClCompile Include="TextureClass.cpp">
+      <Filter>System\Application\Model\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureShaderClass.cpp">
+      <Filter>System\Application\ColorShader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DClass.h">
@@ -45,6 +51,12 @@
     </ClInclude>
     <ClInclude Include="CameraClass.h">
       <Filter>System\Application\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureClass.h">
+      <Filter>System\Application\Model\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureShaderClass.h">
+      <Filter>System\Application\ColorShader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -72,12 +84,21 @@
     <Filter Include="System\Application\Camera">
       <UniqueIdentifier>{dfa91341-5eb2-47b1-8156-232bbad11489}</UniqueIdentifier>
     </Filter>
+    <Filter Include="System\Application\Model\Texture">
+      <UniqueIdentifier>{5aa72d20-db82-458f-8624-c80acf9e8a30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Color.ps">
       <Filter>Shader</Filter>
     </None>
     <None Include="Color.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Texture.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Texture.ps">
       <Filter>Shader</Filter>
     </None>
   </ItemGroup>

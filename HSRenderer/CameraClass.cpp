@@ -29,7 +29,7 @@ void CameraClass::SetRotation(float x, float y, float z)
 	m_rotationZ = z;
 	return;
 }
-void CameraClass::Render()
+void CameraClass::render()
 {
 	DirectX::XMFLOAT3 up, position, lookAt;
 	DirectX::XMVECTOR upVector, positionVector, lookAtVector;

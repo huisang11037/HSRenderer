@@ -21,9 +21,9 @@ public:
 	LRESULT CALLBACK MessageHandler(HWND, UINT, WPARAM, LPARAM);
 
 private:
-	bool Frame();
-	void InitializeWindows(int&, int&);
-	void ShutdownWindows();
+	bool frame();
+	void initializeWindows(int&, int&);
+	void shutdownWindows();
 
 private:
 	LPCWSTR mApplicationName;
